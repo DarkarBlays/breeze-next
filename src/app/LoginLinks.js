@@ -7,7 +7,7 @@ const LoginLinks = () => {
     const { user } = useAuth({ middleware: 'guest' })
 
     return (
-        <div className="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+        <div className="hidden fixe px-6 py-4 sm:block">
             {user ? (
                 <Link
                     href="/dashboard"
@@ -19,14 +19,14 @@ const LoginLinks = () => {
                 <>
                     <Link
                         href="/login"
-                        className="text-sm text-gray-700 underline"
+                        className="bg-blue-500 text-white py-2 px-4 rounded-md inline-block m-2 text-xl font-semibold hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800 transition duration-150 ease-in-out"
                     >
                         Login
                     </Link>
 
                     <Link
                         href="/register"
-                        className="ml-4 text-sm text-gray-700 underline"
+                        className="bg-blue-500 text-white py-2 px-4 rounded-md inline-block m-2 text-xl font-semibold hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800 transition duration-150 ease-in-out"
                     >
                         Register
                     </Link>
